@@ -18,10 +18,8 @@ motorLMF= robot.getDevice("LMF")
 motorLAC= robot.getDevice("LAC")
 motorLAF= robot.getDevice("LAF")
 
-# frequency [Hz]
 f = 2;
 
-#y= a * sin(bx+c)+d
 def getY(a, p, d):
     time = robot.getTime()
     return  a * math.sin(2.0 * math.pi * f * time + p) + d
